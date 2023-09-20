@@ -1,6 +1,7 @@
 import styled from 'styled-components';
 import { Button } from '../../globalStyles';
 
+
 export const HeroSection = styled.section`
 	height: 100vh;
 	background-position: center;
@@ -37,6 +38,24 @@ export const ButtonWrapper = styled.div`
 `;
 
 export const HeroButton = styled(Button)`
+
+	a {
+		text-decoration: none;
+		color: #000000;
+		&:before {
+		background: rgba(255, 255, 255);
+		height: 500%;
+	}
+		
+		&:hover:before {
+		height: 0%;
+		}
+	
+		&:hover {
+		color: black;
+		}
+	}
+
 	color: black;
 
 	&:before {

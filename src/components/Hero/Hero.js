@@ -16,7 +16,11 @@ const Hero = () => {
 					<Link to="signup">
 						<Button>Get Started</Button>
 					</Link>
-					<HeroButton>Find More</HeroButton>
+					<a href={"#carousel"}>
+    				<HeroButton>
+       				Find More
+    				</HeroButton>
+					</a>
 				</ButtonWrapper>
 			</Container>
 		</HeroSection>
